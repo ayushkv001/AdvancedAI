@@ -1,0 +1,32 @@
+% Comments
+
+% Cost <name> <value> 
+C RotiSabji 20
+C DahiChuda 15
+C Kheer 12
+C Halwa 12
+C DalChawal 25
+
+% Group size
+G 2
+
+% Inputs - books / notes. It ends with -1
+I 1 2 3 4 5 -1
+
+% Outputs - final outcome. It ends with -1
+O 11 14 16 17 -1
+
+% Assignment dependency list
+% A <id> <input1> <input2> <outcome> <Food-name>
+A 1 1 2 6 RotiSabji
+A 2 3 4 7 DahiChuda
+A 3 5 6 8 Kheer
+A 4 1 7 9 Halwa
+A 5 2 5 10 DalChawal
+A 6 4 6 11 Kheer
+A 7 6 8 12 RotiSabji
+A 8 9 7 13 DahiChuda
+A 9 10 12 14 RotiSabji
+A 10 10 13 15 DahiChuda
+A 11 13 15 16 DalChawal
+A 12 1 15 17 Halwa

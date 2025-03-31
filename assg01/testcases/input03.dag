@@ -1,0 +1,35 @@
+% Comments
+
+% Cost <name> <value> 
+C TC 3
+C DF 1
+C PM 2
+
+% Group size
+G 4
+
+% Inputs - books / notes. It ends with -1
+I 1 2 3 4 5 6 7 8 -1
+
+% Outputs - final outcome. It ends with -1
+O 22 23 24 25 -1
+
+% Assignment dependency list
+% A <id> <input1> <input2> <outcome> <Food-name>
+A 1 1 2 9 TC
+A 2 3 4 10 DF
+A 3 2 5 11 PM
+A 4 6 7 12 TC
+A 5 5 8 13 PM
+A 6 4 6 14 TC
+A 7 3 7 15 TC
+A 8 9 6 16 DF
+A 9 10 8 17 PM
+A 10 11 12 18 TC
+A 11 13 9 19 DF
+A 12 14 16 20 TC
+A 13 15 17 21 TC
+A 14 18 19 22 PM
+A 15 21 20 23 DF
+A 16 12 20 24 DF
+A 17 19 21 25 TC

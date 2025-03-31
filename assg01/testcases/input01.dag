@@ -1,0 +1,32 @@
+% Comments
+
+% Cost <name> <value> 
+C Dosa 30
+C Idli 12
+C Chaat 10
+C Samosa 8
+
+% Group size
+G 3
+
+% Inputs - books / notes. It ends with -1
+I 1 2 3 4 5 6 7 20 -1
+
+% Outputs - final outcome. It ends with -1
+O 18 19 22 -1
+
+% Assignment dependency list
+% A <id> <input1> <input2> <outcome> <Food-name>
+A 1 1 2 8 Dosa
+A 2 3 4 9 Idli
+A 3 1 5 10 Samosa
+A 4 2 6 11 Chaat
+A 5 6 8 12 Dosa
+A 6 3 7 13 Chaat
+A 7 4 5 14 Dosa
+A 8 9 6 15 Samosa
+A 9 7 13 16 Idli
+A 10 8 9 17 Dosa
+A 11 16 15 18 Idli
+A 12 17 14 19 Dosa
+A 13 18 20 22 Chaat
